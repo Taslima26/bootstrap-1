@@ -8,53 +8,77 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <header>
-          <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar fixed-top">
-            <a class="navbar-brand" href="#"
-              >Welcome to Lorem Epsum Nursery!!!</a >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapsibleNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Our Nursery</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Welcome to Lorem Epsum Nursery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active ">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Find Your Nursery</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About us
+              </a>
+              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item text-warning" href="#">About Busy Bees</a>
+                <a class="dropdown-item text-warning" href="#">Management Team</a>
+                <a class="dropdown-item text-warning" href="#">Download parent pack</a>
+                <a class="dropdown-item text-warning" href="#">Values History</a>
+                <a class ="dropdown-item text-warning" href="#">Cooprate Item</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Being Healthy
+                </a>
+                <div class="dropdown-menu text-warning bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item  text-warning" href="#">Being Healthy</a>
+                  <a class="dropdown-item text-warning" href="#">Recepies</a>
+                  <a class="dropdown-item text-warning" href="#">Nursery Menu</a>
+                
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Starting Nrsery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">EYFS Curriculum</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Our Team</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">FAQ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact-us</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-      </div>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Carrers
+                  </a>
+                  <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item text-warning" href="#">Careers at Busy Bees</a>
+                    <a class="dropdown-item text-warning" href="#">Current Vacancies</a>
+                    <a class="dropdown-item text-warning" href="#">Talent Academy</a>
+                  
+                  </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Search form -->
+
     <div class="jumbotron">
-      <div id="carouselExampleIndicators"
+      <div
+        id="carouselExampleIndicators"
         class="carousel slide"
         data-ride="carousel"
       >
@@ -69,7 +93,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="images/image-6.jpg" alt="first
+            <img class="d-block w-100" src="images/image-2.jpg" alt="first
             slide"First slide" max-width="60%"/>
           </div>
           <div class="carousel-item">
@@ -82,7 +106,7 @@
           <div class="carousel-item">
             <img
               class="d-block w-100"
-              src="images/image-7.jpg"
+              src="images/image-6.jpg"
               alt="Third slide"
             />
           </div>
@@ -110,6 +134,31 @@
       <br />
 
       <div class="container">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-9">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id=""
+                  >Search your local nursery here!</span
+                >
+              </div>
+              <input type="text" class="form-control" />
+              <input type="text" class="form-control" />
+            </div>
+          </div>
+
+          <div class="col-3">
+            <button
+              type="button"
+              class="btn btn-secondary btn-lg btn-block text-warning"
+            >
+              Book a visit today
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
         <h3>Collapsible Navbar</h3>
         <p>
           In this example, the navigation bar is hidden on small screens and
@@ -124,7 +173,6 @@
           navbar links and display the toggler button.
         </p>
       </div>
-      </div>
-    
+    </div>
   </body>
 </html>
