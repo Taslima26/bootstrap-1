@@ -2,7 +2,20 @@
   background-image: url("images/wallpaper-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+.bg-overlay
+{
+  position: relative;
+  background-image: rgba(0, 0, 0, 0);
+  z-index: -5;
 } */
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.nav-link{
+  margin-right: 1 em !important;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -11,7 +24,9 @@
   text-decoration: none;
   margin: 5px 2px;
 }
-
+.navbar{
+  flex-direction: flex-end;
+}
 .fa:hover {
   opacity: 0.7;
 }
